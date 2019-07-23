@@ -21,7 +21,7 @@ python3 mef_ssim_test.py
   }
 ```
 # Note
-This pytorch implementation of MEF_SSIM and if you find some wrong in the code, PLEASE tell me.
+This is a pytorch implementation of MEF_SSIM and if you find some wrong in the code, PLEASE tell me.
 # Reference
 + [pytorch-ssim](https://github.com/Po-Hsun-Su/pytorch-ssim)
 + [Perceptual Quality Assessment for Multi-Exposure Image Fusion](https://ece.uwaterloo.ca/~k29ma/papers/15_TIP_MEF.pdf)
