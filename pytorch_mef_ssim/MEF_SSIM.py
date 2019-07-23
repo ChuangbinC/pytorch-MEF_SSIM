@@ -50,7 +50,6 @@ def _mef_ssim(imgSeq, refImg, window, window_size):
     mu_x_hat_two_sq = torch.pow(mu_x_hat_two,2)
     mu_y_sq = torch.pow(mu_y,2)
     mu_x_hat_two_mu_y = mu_x_hat_two * mu_y
-    print((x_hat_two*x_hat_two).shape)
     sigma_x_hat_two_sq = F.conv2d(x_hat_two*x_hat_two, window, padding = window_size//2, groups = refImg_channel) - mu_x_hat_two_sq
     sigma_y_sq = F.conv2d(refImg*refImg, window, padding = window_size//2, groups = refImg_channel) - mu_y_sq
     sigmaxy = F.conv2d(x_hat_two*refImg, window, padding = window_size//2, groups = refImg_channel) - mu_x_hat_two_mu_y
