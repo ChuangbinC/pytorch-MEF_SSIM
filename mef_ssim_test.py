@@ -2,6 +2,8 @@
 import sys
 import cv2
 import os
+import numpy as np
+import torch
 from pytorch_mef_ssim.pytorch_mef_ssim.MEF_SSIM import mef_ssim
 
 img_dir_path = './pytorch-mef_ssim/seq6'
@@ -26,8 +28,3 @@ refImg = torch.Tensor(refImg)
 
 print(mef_ssim(img_seq,refImg))
 
-
-#%%
-
-
-#%%
