@@ -9,6 +9,14 @@
 python3 mef_ssim_test.py
 ```
 
+# Comparison of Pytorch version and Matlab version						
+|                  | Menters | BruceExpoBlend | GGF     | GGIF    | Raman   | Times    |
+| ---------------- | ------- | -------------- | ------- | ------- | ------- | -------- |
+| pytorch-MEF_SSIM | 0.8702  | 0.8985         | 0.9112  | 0.8711  | 0.8654  | 1.034 s  |
+| Matlab-MEF_SSIM  | 0.9372  | 0.9682         | 0.9903  | 0.9405  | 0.9283  | 80.377 s |
+| Error            | 0.0670  | 0.0697         | 0.0791  | 0.0694  | 0.0629  |          |
+| Error/pytorch-MEF_SSIM                 | 7.700%  | 7.758%         | 8.681%  | 7.967%  | 7.269%  |          |
+
 # Citation
 ```
 @misc{chen2019pytorchmefssim,
